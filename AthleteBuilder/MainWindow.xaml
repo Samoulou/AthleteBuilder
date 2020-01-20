@@ -1,0 +1,40 @@
+﻿<Window
+    x:Class="AthleteBuilder.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:AthleteBuilder"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="1481"
+    Height="597"
+    mc:Ignorable="d">
+    <Grid Height="401">
+        <Button
+            Width="152"
+            Height="56"
+            Margin="446,-72,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="OpenDialog"
+            Content="Import athlete" />
+        <ListView Margin="10,10,10,-58" Name="lvUsers">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Firstname" Width="120" DisplayMemberBinding="{Binding FirstName}" />
+                    <GridViewColumn Header="Lastname" Width="120" DisplayMemberBinding="{Binding LastName}" />
+                    <GridViewColumn Header="Birthdate" Width="120" DisplayMemberBinding="{Binding BirthYear}" />
+                    <GridViewColumn Header="Club" Width="120" DisplayMemberBinding="{Binding Club}" />
+                    <GridViewColumn Header="Sexe" Width="120" DisplayMemberBinding="{Binding Sexe}" />
+                    <GridViewColumn Header="Championnat VS Indoor" Width="150" DisplayMemberBinding="{Binding ChampVsIndoor.ChampVsIndoorTotal}" />
+                    <GridViewColumn Header="Tournée de Cross" Width="120" DisplayMemberBinding="{Binding TourneeCross.TourneeCrossTotal}" />
+                    <GridViewColumn Header="Finale 1000 Gruyère" Width="120" DisplayMemberBinding="{Binding FinaleGruyere.FinaleGruyereTotal}" />
+                    <GridViewColumn Header="Final Sprint" Width="120" DisplayMemberBinding="{Binding FinaleSprint.FinaleSprintTotal}" />
+                    <GridViewColumn Header="Championnat VS Outdoor" Width="150" DisplayMemberBinding="{Binding ChampVsOutdoor.ChampVsOutdoorTotal}" />
+                    <GridViewColumn Header="Championnat VS Multiple" Width="140" DisplayMemberBinding="{Binding ChampVsMultiple.ChampVsMultipleTotal}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Export as CSV" HorizontalAlignment="Left" Margin="700,-72,0,0" VerticalAlignment="Top" Height="56" Width="131" Click="ExportCsv"/>
+    </Grid>
+</Window>
