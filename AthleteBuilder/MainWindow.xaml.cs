@@ -74,6 +74,7 @@ namespace AthleteBuilder
 
             foreach (var athlete in Athletes)
             {
+                //TODO : Add malus (-10 pts)
                 var champVsIndoor = new List<int>
                 {
                     athlete.ChampVsIndoor.FiftyMeterHurdlePoints,

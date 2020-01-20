@@ -127,11 +127,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sam_8\\source\\repos\\AthleteBuilder\\AthleteBuilder\\AthleteBuilder.csproj",
+      "projectUniqueName": "C:\\Users\\sam_8\\Documents\\GitHub\\AthleteBuilder\\AthleteBuilder\\AthleteBuilder.csproj",
       "projectName": "AthleteBuilder",
-      "projectPath": "C:\\Users\\sam_8\\source\\repos\\AthleteBuilder\\AthleteBuilder\\AthleteBuilder.csproj",
+      "projectPath": "C:\\Users\\sam_8\\Documents\\GitHub\\AthleteBuilder\\AthleteBuilder\\AthleteBuilder.csproj",
       "packagesPath": "C:\\Users\\sam_8\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sam_8\\source\\repos\\AthleteBuilder\\AthleteBuilder\\obj\\",
+      "outputPath": "C:\\Users\\sam_8\\Documents\\GitHub\\AthleteBuilder\\AthleteBuilder\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
